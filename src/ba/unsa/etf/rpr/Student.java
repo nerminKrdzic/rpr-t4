@@ -1,10 +1,10 @@
 package ba.unsa.etf.rpr;
 
 public class Student {
-    String firstName;
-    String lastName;
-    Integer index;
-    int numberOfECTSPoints = 0;
+    private String firstName;
+    private String lastName;
+    private Integer index;
+    private int numberOfECTSPoints = 0;
     public Student(String firstName, String lastName){
         this.firstName = firstName;
         this.lastName = lastName;
@@ -15,8 +15,7 @@ public class Student {
     public int getNumberOfECTSPoints() { return this.numberOfECTSPoints; }
     public String getFirstName() { return this.firstName; }
     public String getLastName() { return this.lastName; }
-    public void decreasePoints(int points) throws NotEnoughPoints{
-        if(this.numberOfECTSPoints - points < 30) throw new NotEnoughPoints();
+    public void decreasePoints(int points){
         numberOfECTSPoints -= points;
     }
 

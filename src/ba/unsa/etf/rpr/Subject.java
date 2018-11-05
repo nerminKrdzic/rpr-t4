@@ -33,7 +33,7 @@ public abstract class Subject {
         enrolledStudents.add(student);
         student.increasePoints(getNumberOfECTSPoints());
     }
-    public void deleteStudent(int index) throws NotEnoughPoints{
+    public void deleteStudent(int index){
         for(int i = 0; i < enrolledStudents.size(); i++)
             if(enrolledStudents.get(i).getIndex().equals(index)){
                 enrolledStudents.get(i).decreasePoints(getNumberOfECTSPoints());
@@ -45,7 +45,7 @@ public abstract class Subject {
     public String printStudents(){
         String result = new String();
         for(int i = 0; i < enrolledStudents.size(); i++)
-            result = result + Integer.toString(i + 1) + enrolledStudents.get(i).toString() + "\n";
+            result = result + Integer.toString(i + 1) + ". " + enrolledStudents.get(i).toString() + "\n";
         return result;
     }
 }
