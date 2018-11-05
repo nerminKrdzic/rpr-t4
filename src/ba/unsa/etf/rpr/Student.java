@@ -15,7 +15,7 @@ public class Student {
     public int getNumberOfECTSPoints() { return this.numberOfECTSPoints; }
     public String getFirstName() { return this.firstName; }
     public String getLastName() { return this.lastName; }
-    public void decreasePoints(int points) throws Exception {
+    public void decreasePoints(int points) throws NotEnoughPoints{
         if(this.numberOfECTSPoints - points < 30) throw new NotEnoughPoints();
         numberOfECTSPoints -= points;
     }
