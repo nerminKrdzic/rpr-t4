@@ -63,8 +63,10 @@ public class Semester {
             }
         }
         this.students.add(student); // add student to the semestar
+        student.setIndex(indexCounter++);
         if(student.getNumberOfECTSPoints() < 30){ // if not enugh ECTS delete student
             deleteStudent(student.getIndex());
+            indexCounter--;
             throw new NotEnoughPoints();
         }
     }
