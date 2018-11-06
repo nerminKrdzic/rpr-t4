@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5855706b-e814-418c-9689-ad11c31681e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/ba/unsa/etf/rpr/SubjectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ba/unsa/etf/rpr/SemesterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/Semester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ba/unsa/etf/rpr/Semester.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,6 +12,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/rpr_t4$All_in_rpr_t4.ic" NAME="All in rpr-t4 Coverage Results" MODIFIED="1541533498265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-2062818046">
@@ -24,26 +28,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="6" />
           <entry key="groovy" value="1" />
-          <entry key="java" value="16" />
+          <entry key="java" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="6" />
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="16" />
+          <entry key="JAVA" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5345" />
-          <entry key="txt" value="262" />
+          <entry key="java" value="8156" />
+          <entry key="txt" value="292" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5345" />
-          <entry key="PLAIN_TEXT" value="262" />
+          <entry key="JAVA" value="8156" />
+          <entry key="PLAIN_TEXT" value="292" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -69,16 +75,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rpr/Semester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="97" column="46" selection-start-line="97" selection-start-column="46" selection-end-line="97" selection-end-column="46" />
+            <state relative-caret-position="195">
+              <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
               <folding>
+                <element signature="e#123#124#0" expanded="true" />
+                <element signature="e#154#155#0" expanded="true" />
+                <element signature="e#201#202#0" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
                 <element signature="method#Semester#0;class#Semester#0" />
                 <element signature="method#getElectoralSubjects#0;class#Semester#0" />
                 <element signature="method#getObligatorySubjects#0;class#Semester#0" />
-                <element signature="method#enrollStudent#0;class#Semester#0" />
                 <element signature="method#deleteStudent#0;class#Semester#0" />
               </folding>
             </state>
@@ -86,13 +95,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rpr/Student.java">
+        <entry file="file://$PROJECT_DIR$/test/ba/unsa/etf/rpr/SemesterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="89">
+              <caret line="91" selection-start-line="91" selection-end-line="91" />
               <folding>
-                <element signature="e#738#739#0" expanded="true" />
-                <element signature="e#782#783#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,22 +109,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rpr/Subject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            <state relative-caret-position="322">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="method#Subject#0;class#Subject#0" />
                 <element signature="method#enrollStudent#0;class#Subject#0" />
-                <element signature="method#printStudents#0;class#Subject#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/ba/unsa/etf/rpr/SubjectTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="48" column="102" selection-start-line="48" selection-start-column="102" selection-end-line="48" selection-end-column="102" />
             </state>
           </provider>
         </entry>
@@ -142,11 +140,12 @@
         <option value="$PROJECT_DIR$/src/ba/unsa/etf/rpr/Electoral.java" />
         <option value="$PROJECT_DIR$/src/ba/unsa/etf/rpr/Tuple.java" />
         <option value="$PROJECT_DIR$/src/ba/unsa/etf/rpr/Subject.java" />
-        <option value="$PROJECT_DIR$/src/ba/unsa/etf/rpr/Semester.java" />
         <option value="$PROJECT_DIR$/test/ba/unsa/etf/rpr/StudentTest.groovy" />
         <option value="$PROJECT_DIR$/src/ba/unsa/etf/rpr/Student.java" />
         <option value="$PROJECT_DIR$/test/ba/unsa/etf/rpr/StudentTest.java" />
         <option value="$PROJECT_DIR$/test/ba/unsa/etf/rpr/SubjectTest.java" />
+        <option value="$PROJECT_DIR$/test/ba/unsa/etf/rpr/SemesterTest.java" />
+        <option value="$PROJECT_DIR$/src/ba/unsa/etf/rpr/Semester.java" />
       </list>
     </option>
   </component>
@@ -201,7 +200,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541527669005" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541533537153" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -232,18 +231,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SubjectTest.printStudents">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.Main" />
+  <component name="RunManager" selected="JUnit.All in rpr-t4">
+    <configuration name="All in rpr-t4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rpr-t4" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SemesterTest.addSubject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rpr-t4" />
       <extension name="coverage">
         <pattern>
@@ -252,12 +249,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr" />
-      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.StudentTest" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.SemesterTest" />
+      <option name="METHOD_NAME" value="addSubject" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubjectTest.deleteStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SemesterTest.deleteStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rpr-t4" />
       <extension name="coverage">
         <pattern>
@@ -266,14 +265,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr" />
-      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.SubjectTest" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.SemesterTest" />
       <option name="METHOD_NAME" value="deleteStudent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubjectTest.enrollStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SemesterTest.enrollStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rpr-t4" />
       <extension name="coverage">
         <pattern>
@@ -282,14 +281,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr" />
-      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.SubjectTest" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.SemesterTest" />
       <option name="METHOD_NAME" value="enrollStudent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubjectTest.printStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SemesterTest.getObligatorySubjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rpr-t4" />
       <extension name="coverage">
         <pattern>
@@ -298,26 +297,27 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ba.unsa.etf.rpr" />
-      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.SubjectTest" />
-      <option name="METHOD_NAME" value="printStudents" />
+      <option name="MAIN_CLASS_NAME" value="ba.unsa.etf.rpr.SemesterTest" />
+      <option name="METHOD_NAME" value="getObligatorySubjects" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.StudentTest" />
-      <item itemvalue="JUnit.SubjectTest.enrollStudent" />
-      <item itemvalue="JUnit.SubjectTest.deleteStudent" />
-      <item itemvalue="JUnit.SubjectTest.printStudents" />
+      <item itemvalue="JUnit.SemesterTest.getObligatorySubjects" />
+      <item itemvalue="JUnit.SemesterTest.enrollStudent" />
+      <item itemvalue="JUnit.SemesterTest.deleteStudent" />
+      <item itemvalue="JUnit.SemesterTest.addSubject" />
+      <item itemvalue="JUnit.All in rpr-t4" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SubjectTest.printStudents" />
-        <item itemvalue="JUnit.SubjectTest.deleteStudent" />
-        <item itemvalue="JUnit.SubjectTest.enrollStudent" />
-        <item itemvalue="JUnit.StudentTest" />
+        <item itemvalue="JUnit.All in rpr-t4" />
+        <item itemvalue="JUnit.SemesterTest.addSubject" />
+        <item itemvalue="JUnit.SemesterTest.deleteStudent" />
+        <item itemvalue="JUnit.SemesterTest.enrollStudent" />
+        <item itemvalue="JUnit.SemesterTest.getObligatorySubjects" />
       </list>
     </recent_temporary>
   </component>
@@ -374,30 +374,46 @@
       <option name="project" value="LOCAL" />
       <updated>1541527070379</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Dodao testove za klasu Subject">
+      <created>1541527697615</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1541527697615</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StudentTest - 2018.11.06 at 18h 55m 42s.xml">
-      <configuration name="StudentTest" configurationId="JUnit" />
+    <history-entry file="SemesterTest_deleteStudent - 2018.11.06 at 20h 21m 55s.xml">
+      <configuration name="SemesterTest.deleteStudent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentTest - 2018.11.06 at 18h 56m 26s.xml">
-      <configuration name="StudentTest" configurationId="JUnit" />
+    <history-entry file="SemesterTest_deleteStudent - 2018.11.06 at 20h 22m 06s.xml">
+      <configuration name="SemesterTest.deleteStudent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SubjectTest_enrollStudent - 2018.11.06 at 19h 03m 31s.xml">
-      <configuration name="SubjectTest.enrollStudent" configurationId="JUnit" />
+    <history-entry file="SemesterTest_deleteStudent - 2018.11.06 at 20h 22m 10s.xml">
+      <configuration name="SemesterTest.deleteStudent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SubjectTest_enrollStudent - 2018.11.06 at 19h 03m 48s.xml">
-      <configuration name="SubjectTest.enrollStudent" configurationId="JUnit" />
+    <history-entry file="SemesterTest_addSubject - 2018.11.06 at 20h 30m 23s.xml">
+      <configuration name="SemesterTest.addSubject" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SubjectTest_enrollStudent - 2018.11.06 at 19h 04m 38s.xml">
-      <configuration name="SubjectTest.enrollStudent" configurationId="JUnit" />
+    <history-entry file="SemesterTest_addSubject - 2018.11.06 at 20h 30m 49s.xml">
+      <configuration name="SemesterTest.addSubject" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SubjectTest_enrollStudent - 2018.11.06 at 19h 05m 09s.xml">
-      <configuration name="SubjectTest.enrollStudent" configurationId="JUnit" />
+    <history-entry file="All_in_rpr-t4 - 2018.11.06 at 20h 34m 08s.xml">
+      <configuration name="All in rpr-t4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SubjectTest_deleteStudent - 2018.11.06 at 19h 06m 46s.xml">
-      <configuration name="SubjectTest.deleteStudent" configurationId="JUnit" />
+    <history-entry file="All_in_rpr-t4 - 2018.11.06 at 20h 35m 37s.xml">
+      <configuration name="All in rpr-t4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_rpr-t4 - 2018.11.06 at 20h 36m 17s.xml">
+      <configuration name="All in rpr-t4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_rpr-t4 - 2018.11.06 at 20h 37m 07s.xml">
+      <configuration name="All in rpr-t4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_rpr-t4 - 2018.11.06 at 20h 43m 36s.xml">
+      <configuration name="All in rpr-t4" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -414,8 +430,8 @@
       <window_info anchor="bottom" id="Messages" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29180327" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47213113" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.36885247" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -442,7 +458,8 @@
     <MESSAGE value="Implementirao klasu Subject i njene child klase" />
     <MESSAGE value="Implementirao klasu Semester i popravio neke sitnice" />
     <MESSAGE value="Dodao testove za klasu Student" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodao testove za klasu Student" />
+    <MESSAGE value="Dodao testove za klasu Subject" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodao testove za klasu Subject" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -455,8 +472,34 @@
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/ba/unsa/etf/rpr/SemesterTest.java</url>
+          <line>91</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ba/unsa/etf/rpr/Semester.java</url>
+          <line>112</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="s" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>s</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rpr/NotEnoughPoints.java">
@@ -511,32 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rpr/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding>
-            <element signature="method#Subject#0;class#Subject#0" />
-            <element signature="method#enrollStudent#0;class#Subject#0" />
-            <element signature="method#printStudents#0;class#Subject#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rpr/Semester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="97" column="46" selection-start-line="97" selection-start-column="46" selection-end-line="97" selection-end-column="46" />
-          <folding>
-            <element signature="method#Semester#0;class#Semester#0" />
-            <element signature="method#getElectoralSubjects#0;class#Semester#0" />
-            <element signature="method#getObligatorySubjects#0;class#Semester#0" />
-            <element signature="method#enrollStudent#0;class#Semester#0" />
-            <element signature="method#deleteStudent#0;class#Semester#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rpr/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -550,8 +567,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ba/unsa/etf/rpr/SubjectTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
+        <state relative-caret-position="782">
           <caret line="48" column="102" selection-start-line="48" selection-start-column="102" selection-end-line="48" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.3.1/junit-jupiter-api-5.3.1.jar!/org/junit/jupiter/api/Assertions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="473" selection-start-line="473" selection-end-line="473" />
+          <folding>
+            <element signature="e#18237#18238#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.3.1/junit-jupiter-api-5.3.1.jar!/org/junit/jupiter/api/AssertDoesNotThrow.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rpr/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="method#Subject#0;class#Subject#0" />
+            <element signature="method#enrollStudent#0;class#Subject#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ba/unsa/etf/rpr/SemesterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="237" selection-start-line="237" selection-end-line="237" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ba/unsa/etf/rpr/Semester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
+          <folding>
+            <element signature="e#123#124#0" expanded="true" />
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="method#Semester#0;class#Semester#0" />
+            <element signature="method#getElectoralSubjects#0;class#Semester#0" />
+            <element signature="method#getObligatorySubjects#0;class#Semester#0" />
+            <element signature="method#deleteStudent#0;class#Semester#0" />
+          </folding>
         </state>
       </provider>
     </entry>

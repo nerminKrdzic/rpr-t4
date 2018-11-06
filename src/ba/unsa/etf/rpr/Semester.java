@@ -3,6 +3,14 @@ package ba.unsa.etf.rpr;
 import java.util.ArrayList;
 
 public class Semester {
+    public ArrayList<Student> getStudents() {
+        return students;
+    }
+
+    public ArrayList<Subject> getSubjects() {
+        return subjects;
+    }
+
     private ArrayList<Student> students =  new ArrayList<>();
     private ArrayList<Subject> subjects = new ArrayList<>();
     Integer indexCounter = 15000;
@@ -22,25 +30,30 @@ public class Semester {
 
     public String getElectoralSubjects(){
         String result = new String();
-        for(int i = 0; i < this.subjects.size(); i++){
-            if(this.subjects.get(i) instanceof Electoral){
-                result += Integer.toString(i + 1) + ". subjectName: " + this.subjects.get(i).getSubjectName() + ", responsibleTeacher: "
-                        + this.subjects.get(i).getResponsibleTeacher() + ", ECTS: " + Integer.toString(this.subjects.get(i).getNumberOfECTSPoints()) + "\n";
+        int i = 1;
+        for(Subject s : this.subjects){
+            if(s instanceof Electoral){
+                result += Integer.toString(i) + ". Subject name: " + s.getSubjectName() + ", Responsible teacher: "
+                        + s.getResponsibleTeacher() + ", ECTS: " + Integer.toString(s.getNumberOfECTSPoints()) + "\n";
+                i++;
             }
         }
         return result;
     }
     public String getObligatorySubjects(){
         String result = new String();
-        for(int i = 0; i < this.subjects.size(); i++){
-            if(this.subjects.get(i) instanceof Obligatory){
-                result += Integer.toString(i + 1) + ". subjectName: " + this.subjects.get(i).getSubjectName() + ", responsibleTeacher: "
-                        + this.subjects.get(i).getResponsibleTeacher() + ", ECTS: " + Integer.toString(this.subjects.get(i).getNumberOfECTSPoints()) + "\n";
+        int i = 1;
+        for(Subject s : this.subjects){
+            if(s instanceof Obligatory){
+                result += Integer.toString(i) + ". Subject name: " + s.getSubjectName() + ", Responsible teacher: "
+                        + s.getResponsibleTeacher() + ", ECTS: " + Integer.toString(s.getNumberOfECTSPoints()) + "\n";
+                i++;
             }
         }
         return result;
     }
-    public void enrollStudent(Student student, ArrayList<String> electoralSubjects) throws NotEnoughPoints{
+    public void enrollStudent(Student student, ArrayList<String> electoralSubjects) throws NotEnoughPoints, IllegalArgumentException{
+        if(student == null || electoralSubjects == null) throw new IllegalArgumentException();
         boolean ima = false; // check if electorals are correct
         for(String electoral : electoralSubjects) {
             ima = false;
@@ -50,8 +63,8 @@ public class Semester {
                     break;
                 }
             }
+            if(!ima) throw new IllegalArgumentException();
         }
-        if(!ima) throw new IllegalArgumentException();
         for(Subject s : this.subjects){ // enroll student in subjects
             if(s instanceof Obligatory) s.enrollStudent(student);
             else {
@@ -63,8 +76,12 @@ public class Semester {
             }
         }
         this.students.add(student); // add student to the semestar
+        student.setIndex(this.indexCounter++);
         if(student.getNumberOfECTSPoints() < 30){ // if not enugh ECTS delete student
+            student.setIndex(0);
+            this.indexCounter--;
             deleteStudent(student.getIndex());
+
             throw new NotEnoughPoints();
         }
     }
@@ -93,10 +110,12 @@ public class Semester {
             }
         if(subject == null) throw new IllegalArgumentException();
         this.subjects.remove(subject);
-        for(Student s : this.students){
-            subject.deleteStudent(s.getIndex());
-            if(s.getNumberOfECTSPoints() < 30)
-                deleteStudent(s.getIndex());
+        for(int i = 0; i < students.size(); i++){
+            subject.deleteStudent(students.get(i).getIndex());
+            if(students.get(i).getNumberOfECTSPoints() < 30){
+                deleteStudent(students.get(i).getIndex());
+                i--;
+            }
         }
     }
 }
